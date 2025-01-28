@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="../node_modules/bootsrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="Formenhancement.js" defer></script>
+    <script src="Dynamicprojects.js" defer></script>
+    
+</head>
+<body>
+    <header>
+    <div>
+        <h1>Pranay Sai Chava</h1>
+    </div>
+    <nav>
+        <span class="social-links">
+            <a href="https://github.com/Pranaycodez" target="_blank">Github</a>
+            <a href="https://www.linkedin.com/in/pranaysaichava/" target="_blank">LinkedIn</a>
+        </span>
+    </nav>
+    </header>
+    <main>
+    <section id="introduction">
+        <h2>My Intro</h2>
+        <p>Hello, I'm Pranay Sai Chava, a student and aspiring web developer. Enthusiastic to learn and grow in a 
+            software Engineering career. I am currently pursuing a Ontario College Certificate in Computer Software and Database Development 
+            at Loyalist College, Toronto. Checkout my Github and Linkedin profiles to know more about me and my contributions.
+        </p>
+    </section>
+
+    <section id="Work Experience">
+        <h2>Work Experience</h2>
+        <p><b>Consultant</b> at <b>Kotak Mahindra Bank,</b> Mumbai</p>
+        <ul>
+            <li>Provided consulting services to Kotak Mahindra Bank, a renowned
+                banking and financial services company.</li>
+            <li>Graced the Application Support profile, Where I was assigned with
+                testing tasks to perform on their Enterprise Application.</li>
+            <li>Collaborated as a support to Front-end Developers to contribute in
+                their development work.</li>
+            <li>Gained proficiency in utilizing Adobe Analytics tool to analyze
+                API response codes, optimizing application performance.</li>
+        </ul>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML,CSS and JavaScript</li>
+            <li>ReactJS</li>
+            <li>SQL and MySQL</li>
+            <li>Java</li>
+            <li>Selenium</li>
+            <li>Adobe Analytics</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div id="projects-list"></div>
+    </section>
+
+        <section id="contact">
+            <h2>Let's get in touch!</h2>
+            <form id="contact-form">
+
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" onkeyup="validateName()">
+                <span id="name-error"></span>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" onkeyup="validateEmail()">
+                <span id="email-error"></span>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" onkeyup="validateMessage()"></textarea>
+                <span id="message-error"></span>
+
+                <button type="submit">Submit</button>
+                <span id="success-message"></span>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
