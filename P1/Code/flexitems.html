@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Items</title>
+    <style>
+        .flex-container {
+            display: flex;
+            height: 200px;
+            background-color: lightblue;
+        }
+
+        div {
+            background-color: lightcoral;
+            margin: 10px;
+            padding: 20px;
+            font-size: 30px;
+            align-items: flex-start;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flex Items Property [flex-grow]</h1>
+    <div class="flex-container">
+        <div style="flex-grow: 3;">A</div>
+        <div style="flex-grow: 1;">B</div>
+        <div style="flex-grow: 8;">C</div>
+    
+    </div>
+</body>
+</html>
